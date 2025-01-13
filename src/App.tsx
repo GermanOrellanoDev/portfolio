@@ -1,19 +1,8 @@
 import "./App.css";
-import { Project } from "./Projects/models/Project";
-import ProjectList from "./Projects/ProjectList";
-
-//layout -> display -> spacing -> border -> colors -> text
+import Home from "./pages/Home";
 
 function App() {
-  const projectsArray: Project[] = [
-    {
-      name: "primer proyecto",
-      detail: "detalle primer proyecto",
-      image: "",
-    },
-  ];
-
-  return <ProjectList projects={projectsArray}></ProjectList>;
+  return <Home />;
 }
 
 export default App;
