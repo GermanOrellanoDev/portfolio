@@ -12,11 +12,11 @@ const ProjectList = ({ projects }: Props) => {
         <ProjectItem
           key={project.id}
           id={project.id}
-          image="https://blog.nuthost.com/wp-content/uploads/2022/04/Proyecto-web-blog-NutHost-imagen-destacada.jpg"
+          image="/project-pic.jpg"
           name={project.name}
           detail={project.detail || "Sin descripción"}
           html_url={project.html_url}
-          language={project.language || "No especificado"}
+          language={project.language}
         />
       ))}
     </>
