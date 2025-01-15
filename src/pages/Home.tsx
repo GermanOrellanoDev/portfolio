@@ -5,6 +5,7 @@ import AboutMe from "../components/AboutMe/AboutMe.tsx";
 import Hero from "../components/Hero/Hero.tsx";
 import ProjectListContainer from "../components/Projects/ProjectListContainer.tsx";
 import useFetchProjects from "../hooks/useFetchProjects.ts";
+import Skills from "../components/Skills/Skills.tsx";
 
 function Home() {
   const { projectsArray, loading, error } = useFetchProjects(
@@ -22,21 +23,43 @@ function Home() {
     //revisar
     <>
       <div className="min-h-screen bg-gray-900 text-white">
-        <section id="hero">
+        <section
+          className="bg-gradient-to-r from-blue-950 to-purple-600 text-white py-20 px-4 sm:px-6 lg:px-8"
+          data-aos="fade-down"
+          id="hero"
+        >
           <Hero />
         </section>
-        <section id="about-me">
+        <section
+          className="py-16 px-4 sm:px-6 lg:px-8"
+          data-aos="fade-up"
+          id="about-me"
+        >
           <AboutMe />
         </section>
-        <section id="my-projects">
+        <section
+          className="bg-gray-800 py-16 px-4 sm:px-6 lg:px-8"
+          data-aos="fade-up"
+          id="my-projects"
+        >
           <ProjectListContainer
             projects={projectsArray}
             loading={loading}
             error={error}
           ></ProjectListContainer>
         </section>
-        <section id="skills"></section>
-        <section id="contact-me"></section>
+        <section
+          className="py-16 px-4 sm:px-6 lg:px-8"
+          data-aos="fade-up"
+          id="skills"
+        >
+          <Skills />
+        </section>
+        <section
+          className="py-16 px-4 bg-gray-800"
+          data-aos="fade-up"
+          id="contact-me"
+        ></section>
       </div>
     </>
   );

@@ -30,12 +30,9 @@ const ProjectListContainer = ({ projects, loading, error }: Props) => {
     );
 
   return (
-    <div
-      className="min-h-screen bg-gray-800 py-10 px-4 sm:px-6 lg:px-8"
-      data-aos="fade-up"
-    >
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-xl md:text-2xl text-white text-center font-bold mb-6">
+    <div className="max-w-7xl mx-auto">
+      <div className="container mx-auto">
+        <h2 className="text-xl md:text-2xl text-white text-center font-bold mb-8">
           Mis Proyectos
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
