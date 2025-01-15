@@ -13,7 +13,8 @@ const useFetchProjects = (url: string) => {
         const response = await fetch(url);
         if (!response.ok) throw new Error("Failed to fetch repos");
         const data: Project[] = await response.json();
-        setProjectsArray(data);
+        const filteredProjects = data.filter((project)=> project.name.toLowerCase()!== 'portfolio')
+        setProjectsArray(filteredProjects);
       } catch (error) {
         setError((error as Error).message);
       } finally {

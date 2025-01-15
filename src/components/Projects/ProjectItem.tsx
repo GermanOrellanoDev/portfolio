@@ -9,25 +9,36 @@ interface Props {
   language: string;
 }
 
-const ProjectItem = ({ name, image, detail, html_url, language }: Props) => {
+const ProjectItem = (project: Props) => {
   return (
-    <div className="bg-gray-500 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 relative">
+    <div
+      key={project.id}
+      className="bg-gray-500 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 relative"
+      data-aos="fade-up"
+    >
       <div className="relative h-48 overflow-hidden">
-        {/* modificar */}
         <img
-          src={image}
-          alt={name}
+          src={project.image}
+          alt={project.name}
           className="w-full h-full object-cover object-center"
         />
       </div>
       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-        <FaGithub size={28} className="text-white" />
+        <a
+          href={project.html_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-white flex items-center space-x-2"
+        >
+          <FaGithub size={28} className="text-white" />
+        </a>
       </div>
       <div className="p-4">
-        <h3 className="text-xl font-semibold mb-5">{name}</h3>
-        <p className="text-gray-300 mb-4">{detail}</p>
-        <p className="text-gray-400 text-sm mb-4">Lenguaje: {language}</p>
-        <a href={html_url}></a>
+        <h3 className="text-xl font-semibold mb-5">{project.name}</h3>
+        <p className="text-gray-300 mb-4">{project.detail}</p>
+        <span className="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm">
+          {project.language}
+        </span>
       </div>
     </div>
   );

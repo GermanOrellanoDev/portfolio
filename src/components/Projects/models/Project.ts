@@ -4,5 +4,5 @@ export interface Project {
   name: string;
   detail: string|null;
   html_url: string;
-  language: string|null;
+  language: string;
 }
