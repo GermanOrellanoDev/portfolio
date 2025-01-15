@@ -30,8 +30,8 @@ const ProjectListContainer = ({ projects, loading, error }: Props) => {
     );
 
   return (
-    <div className="max-w-7xl mx-auto">
-      <div className="container mx-auto">
+    <div className="container mx-auto">
+      <div className="max-w-7xl">
         <h2 className="text-xl md:text-2xl text-white text-center font-bold mb-8">
           Mis Proyectos
         </h2>

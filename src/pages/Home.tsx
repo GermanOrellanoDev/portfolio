@@ -6,6 +6,8 @@ import Hero from "../components/Hero/Hero.tsx";
 import ProjectListContainer from "../components/Projects/ProjectListContainer.tsx";
 import useFetchProjects from "../hooks/useFetchProjects.ts";
 import Skills from "../components/Skills/Skills.tsx";
+import ContactMe from "../components/ContactMe/ContactMe.tsx";
+import Footer from "../components/Footer/Footer.tsx";
 
 function Home() {
   const { projectsArray, loading, error } = useFetchProjects(
@@ -56,10 +58,19 @@ function Home() {
           <Skills />
         </section>
         <section
-          className="py-16 px-4 bg-gray-800"
+          className="bg-gray-800 py-16 px-4 sm:px-6 lg:px-8"
           data-aos="fade-up"
           id="contact-me"
-        ></section>
+        >
+          <ContactMe />
+        </section>
+        <section
+          className="py-16 px-4 sm:px-6 lg:px-8"
+          data-aos="fade-up"
+          id="footer"
+        >
+          <Footer />
+        </section>
       </div>
     </>
   );

@@ -11,11 +11,7 @@ interface Props {
 
 const ProjectItem = (project: Props) => {
   return (
-    <div
-      key={project.id}
-      className="bg-gray-500 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 relative"
-      data-aos="fade-up"
-    >
+    <>
       <div className="relative h-48 overflow-hidden">
         <img
           src={project.image}
@@ -40,7 +36,7 @@ const ProjectItem = (project: Props) => {
           {project.language}
         </span>
       </div>
-    </div>
+    </>
   );
 };
 
