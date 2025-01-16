@@ -14,7 +14,7 @@ const contactData: Contact[] = [
     url: "https://github.com/GermanOrellanoDev",
   },
   {
-    name: "gorellano.dev@gmail.com",
+    name: "Mail",
     icon: <MdEmail size={30} />,
     url: "mailto:gorellano.dev@gmail.com?subject=Consulta%20sobre%20mi%20portafolio",
   },
@@ -26,17 +26,17 @@ const ContactMe = () => {
       <h2 className="text-xl md:text-2xl text-white text-center font-bold mb-8">
         Contáctame
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <div className="flex flex-col justify-center max-w-4xl mx-auto md:grid md:grid-cols-3">
         {contactData.map((contact, i) => (
           <a href={contact.url} target="_blank" rel="noopener noreferrer">
             <div
               key={i}
-              className="p-6"
+              className="p-1 md:p-6"
               data-aos="fade-up"
               data-aos-delay={i * 100}
             >
               <div className="text-white hover:text-blue-400 font-medium flex items-center justify-center gap-4 my-4">
-                <h3>{contact.name}</h3>
+                <h3 className="text-l md:text-xl">{contact.name}</h3>
                 <span>{contact.icon}</span>
               </div>
             </div>

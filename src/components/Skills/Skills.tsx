@@ -26,7 +26,7 @@ const skills: Skill[] = [
   { name: "JAVA", icon: <FaJava /> },
   { name: "Node.js", icon: <FaNodeJs /> },
   { name: "MongoDB", icon: <SiMongodb /> },
-  { name: "MySQL (aprendiendo)", icon: <SiMysql /> },
+  { name: "MySQL", icon: <SiMysql /> },
 ];
 
 const Skills = () => {
@@ -35,17 +35,17 @@ const Skills = () => {
       <h2 className="text-xl md:text-2xl text-white text-center font-bold mb-8">
         Habilidades
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <div className="grid grid-cols-2 gap-4 max-w-4xl mx-auto md:gap-6 lg:grid-cols-3 lg:gap-8 xl:max-w-5xl">
         {skills.map((skill, i) => (
           <div
             key={i}
-            className="bg-gray-800 p-6 rounded-lg shadow-md"
+            className="bg-gray-800 rounded-lg shadow-md md:p-6"
             data-aos="fade-up"
             data-aos-delay={i * 100}
           >
             <div className="flex items-center justify-center gap-4 my-4">
               <span className="text-3xl text-blue-400">{skill.icon}</span>
-              <h3 className="text-lg font-semibold">{skill.name}</h3>
+              <h4 className="text-sm font-semibold">{skill.name}</h4>
             </div>
           </div>
         ))}

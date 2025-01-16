@@ -16,7 +16,7 @@ function Home() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 1200,
       once: false,
     });
   }, []);
@@ -26,21 +26,21 @@ function Home() {
     <>
       <div className="min-h-screen bg-gray-900 text-white">
         <section
-          className="bg-gradient-to-r from-blue-950 to-purple-600 text-white py-20 px-4 sm:px-6 lg:px-8"
+          className="bg-gradient-to-r from-blue-950 to-purple-600 text-white py-20 px-4 sm:px-6 lg:px-8 xl:px-10"
           data-aos="fade-down"
           id="hero"
         >
           <Hero />
         </section>
         <section
-          className="py-16 px-4 sm:px-6 lg:px-8"
+          className="py-16 px-4 sm:px-6 lg:px-8 xl:px-10"
           data-aos="fade-up"
           id="about-me"
         >
           <AboutMe />
         </section>
         <section
-          className="bg-gray-800 py-16 px-4 sm:px-6 lg:px-8"
+          className="bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 xl:px-10"
           data-aos="fade-up"
           id="my-projects"
         >
@@ -51,24 +51,20 @@ function Home() {
           ></ProjectListContainer>
         </section>
         <section
-          className="py-16 px-4 sm:px-6 lg:px-8"
+          className="py-16 px-4 sm:px-6 lg:px-8 xl:px-10"
           data-aos="fade-up"
           id="skills"
         >
           <Skills />
         </section>
         <section
-          className="bg-gray-800 py-16 px-4 sm:px-6 lg:px-8"
+          className="bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 xl:px-10"
           data-aos="fade-up"
           id="contact-me"
         >
           <ContactMe />
         </section>
-        <section
-          className="py-16 px-4 sm:px-6 lg:px-8"
-          data-aos="fade-up"
-          id="footer"
-        >
+        <section className="py-16 px-4 sm:px-6 lg:px-8 xl:px-10" id="footer">
           <Footer />
         </section>
       </div>
