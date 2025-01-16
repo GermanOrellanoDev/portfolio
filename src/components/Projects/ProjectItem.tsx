@@ -26,12 +26,16 @@ const ProjectItem = (project: Props) => {
           rel="noopener noreferrer"
           className="text-white flex items-center space-x-2"
         >
-          <FaGithub size={28} className="text-white" />
+          <FaGithub size={36} />
         </a>
       </div>
       <div className="p-4">
-        <h3 className="text-xl font-semibold mb-5">{project.name}</h3>
-        <p className="text-gray-300 mb-4">{project.detail}</p>
+        <h3 className="text-lg md:text-xl font-semibold mb-5">
+          {project.name}
+        </h3>
+        <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-4">
+          {project.detail}
+        </p>
         <span className="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm">
           {project.language}
         </span>

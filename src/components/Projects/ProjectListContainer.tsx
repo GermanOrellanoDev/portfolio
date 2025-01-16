@@ -31,13 +31,11 @@ const ProjectListContainer = ({ projects, loading, error }: Props) => {
 
   return (
     <div className="container mx-auto">
-      <div className="max-w-7xl">
-        <h2 className="text-xl md:text-2xl text-white text-center font-bold mb-8">
-          Mis Proyectos
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-          <ProjectList projects={projects}></ProjectList>
-        </div>
+      <h2 className="text-xl md:text-2xl text-white text-center font-bold mb-8 mx-auto">
+        Mis proyectos
+      </h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <ProjectList projects={projects}></ProjectList>
       </div>
     </div>
   );
