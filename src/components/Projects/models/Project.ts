@@ -2,7 +2,7 @@ export interface Project {
   id: number;
   image: string;
   name: string;
-  detail: string|null;
+  description: string|null;
   html_url: string;
   language: string;
 }

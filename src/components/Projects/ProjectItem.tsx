@@ -4,7 +4,7 @@ interface Props {
   id: number;
   image: string;
   name: string;
-  detail: string;
+  description: string;
   html_url: string;
   language: string;
 }
@@ -33,9 +33,7 @@ const ProjectItem = (project: Props) => {
         <h3 className="text-lg md:text-xl font-semibold mb-5">
           {project.name}
         </h3>
-        <p className="text-base sm:text-lg md:text-xl text-gray-300 mb-4">
-          {project.detail}
-        </p>
+        <p className="text-sm text-gray-300 mb-4">{project.description}</p>
         <span className="px-3 py-1 bg-blue-900 text-blue-200 rounded-full text-sm">
           {project.language}
         </span>
