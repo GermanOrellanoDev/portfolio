@@ -10,7 +10,7 @@ const AboutMe = () => {
       <div className="flex flex-col justify-center items-center lg:flex-row mx-w-3xl mx-auto text-gray-300 text-justify text-base sm:text-lg md:text-xl leading-relaxed">
         <img
           src="/me-image.png"
-          alt="mi-foto"
+          alt="foto-mia-sección-sobre-mi"
           className="z-10 w-auto h-64 md:h-80 md:mr-14 opacity-90"
         />
         <div className="flex flex-col mb-4">
@@ -19,7 +19,7 @@ const AboutMe = () => {
           </p>
 
           <p className="z-10 m-3">
-            Soy un desarrollador <strong>fullstack junior</strong> apasionado
+            Soy un desarrollador <strong>full stack junior</strong> apasionado
             por la tecnología y listo para dar un gran giro en mi vida
             profesional. Después de más de 10 años de experiencia en el{" "}
             <strong>sector de compras en el rubro de la construcción</strong>,

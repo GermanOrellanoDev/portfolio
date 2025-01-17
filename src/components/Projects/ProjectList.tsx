@@ -20,7 +20,7 @@ const ProjectList = ({ projects }: Props) => {
             id={project.id}
             image="/project-pic.jpg"
             name={project.name}
-            detail={project.detail || "Sin descripción"}
+            description={project.description || "Sin descripción"}
             html_url={project.html_url}
             language={project.language}
           />

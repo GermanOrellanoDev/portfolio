@@ -5,10 +5,11 @@ const Hero = () => {
         Germán Orellano
       </h1>
       <p className="text-lg sm:text-xl md:text-2xl mb-8">
-        Full-Stack Developer
+        Full Stack Developer
       </p>
       <a
         href="#my-projects"
+        title="Proyectos de aplicaciones web"
         className="text-l bg-white text-blue-900 px-8 py-3 rounded-full font-semibold hover:bg-opacity-70 transition duration-300"
       >
         Ver proyectos

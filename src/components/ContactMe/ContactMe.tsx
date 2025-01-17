@@ -28,9 +28,13 @@ const ContactMe = () => {
       </h2>
       <div className="flex flex-col justify-center max-w-4xl mx-auto md:grid md:grid-cols-3">
         {contactData.map((contact, i) => (
-          <a href={contact.url} target="_blank" rel="noopener noreferrer">
+          <a
+            key={i}
+            href={contact.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
-              key={i}
               className="p-1 md:p-6"
               data-aos="fade-up"
               data-aos-delay={i * 100}
