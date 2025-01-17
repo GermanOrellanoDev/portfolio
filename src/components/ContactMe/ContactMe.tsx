@@ -16,7 +16,7 @@ const contactData: Contact[] = [
   {
     name: "Mail",
     icon: <MdEmail size={30} />,
-    url: "mailto:gorellano.dev@gmail.com?subject=Consulta%20sobre%20mi%20portafolio",
+    url: "mailto:german@gorellanodev.com?subject=Consulta%20sobre%20mi%20portafolio",
   },
 ];
 
