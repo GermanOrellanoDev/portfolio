@@ -27,19 +27,26 @@ const AboutMe = () => {
             resolución de problemas y la adaptabilidad, decidí seguir mi
             verdadera pasión: la programación.
           </p>
-
           <p className="z-10 m-3">
-            💻 Durante los últimos años, me he sumergido profundamente en el
-            mundo del desarrollo de software, adquiriendo conocimientos sólidos
-            en tecnologías como:
-            <strong> HTML</strong>, <strong>CSS</strong>,{" "}
-            <strong>JavaScript</strong>, <strong>React</strong>,{" "}
-            <strong>Typescript</strong>, <strong>Node.js</strong>,{" "}
-            <strong>Express</strong> y <strong> bases de datos NoSQL</strong>.
-            Este proceso me ha dado la confianza y las herramientas necesarias
-            para aportar valor desde el primer día en un equipo de desarrollo.
+            Durante los últimos años me he formado como desarrollador fullstack
+            y he trabajado tanto en la parte de cliente como en la de servidor.
+            🎨 En el frontend me especializo en <strong>HTML</strong>,{" "}
+            <strong>CSS</strong>, <strong>JavaScript</strong>,{" "}
+            <strong>React</strong>, <strong>TypeScript</strong> y diseño con{" "}
+            <strong>Tailwind CSS</strong>, construyendo interfaces accesibles y
+            responsivas.
           </p>
-
+          <p className="z-10 m-3">
+            💻 En el backend manejo tecnologías y patrones tanto en Java como en
+            JavaScript:
+            <strong> Node.js</strong> y <strong>Express</strong> para APIs
+            rápidas y ligeras, y <strong>Java</strong> con{" "}
+            <strong>Spring Boot</strong> para aplicaciones empresariales. Además
+            trabajo con bases de datos relacionales y no relacionales (por
+            ejemplo <strong>MySQL</strong> con <strong>JDBC</strong> y
+            soluciones NoSQL), lo que me permite diseñar y consumir servicios
+            robustos y escalables.
+          </p>
           <p className="z-10 m-3">
             🚀 Estoy en busca de nuevos desafíos y oportunidades en el sector
             tecnológico, donde pueda aplicar mis habilidades técnicas y
