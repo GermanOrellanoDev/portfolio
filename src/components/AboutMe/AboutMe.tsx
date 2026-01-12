@@ -21,39 +21,71 @@ const AboutMe = () => {
           <p className="z-10 m-3">
             Soy un desarrollador <strong>full stack junior</strong> apasionado
             por la tecnología y listo para dar un gran giro en mi vida
-            profesional. Después de más de 10 años de experiencia en el{" "}
+            profesional. Tras más de 10 años de experiencia en el{" "}
             <strong>sector de compras en el rubro de la construcción</strong>,
             donde desarrollé habilidades clave como el trabajo en equipo, la
             resolución de problemas y la adaptabilidad, decidí seguir mi
             verdadera pasión: la programación.
           </p>
           <p className="z-10 m-3">
-            Durante los últimos años me he formado como desarrollador fullstack
+            Durante los últimos años me he formado como desarrollador fullstack,
+            trabajando tanto en la parte de cliente como en la de servidor. En
+            el frontend 🎨, me especializo en{" "}
+            <strong className="font-semibold">HTML</strong>,{" "}
+            <strong className="font-semibold">CSS</strong>,{" "}
+            <strong className="font-semibold">JavaScript</strong>,{" "}
+            <strong className="font-semibold">React</strong>,{" "}
+            <strong className="font-semibold">TypeScript</strong> y en el diseño
+            con <strong className="font-semibold">Tailwind CSS</strong>,
+            construyendo interfaces accesibles, modernas y responsivas con foco
+            en la experiencia del usuario.
+            {/*             Durante los últimos años me he formado como desarrollador fullstack
             y he trabajado tanto en la parte de cliente como en la de servidor.
-            🎨 En el frontend me especializo en <strong>HTML</strong>,{" "}
+            En el frontend, me especializo en <strong>HTML</strong>,{" "}
             <strong>CSS</strong>, <strong>JavaScript</strong>,{" "}
-            <strong>React</strong>, <strong>TypeScript</strong> y diseño con{" "}
-            <strong>Tailwind CSS</strong>, construyendo interfaces accesibles y
-            responsivas.
+            <strong>React</strong>, <strong>TypeScript</strong> y en el diseño
+            con <strong>Tailwind CSS</strong>, construyendo interfaces
+            accesibles y responsivas. */}
           </p>
           <p className="z-10 m-3">
-            💻 En el backend manejo tecnologías y patrones tanto en Java como en
-            JavaScript:
-            <strong> Node.js</strong> y <strong>Express</strong> para APIs
-            rápidas y ligeras, y <strong>Java</strong> con{" "}
-            <strong>Spring Boot</strong> para aplicaciones empresariales. Además
-            trabajo con bases de datos relacionales y no relacionales (por
-            ejemplo <strong>MySQL</strong> con <strong>JDBC</strong> y
-            soluciones NoSQL), lo que me permite diseñar y consumir servicios
-            robustos y escalables.
+            En el backend 🖥️, manejo tecnologías y patrones tanto en{" "}
+            <strong className="font-semibold">Java</strong> como en{" "}
+            <strong className="font-semibold">JavaScript</strong>. Utilizo{" "}
+            <strong className="font-semibold">Node.js</strong> y{" "}
+            <strong className="font-semibold">Express</strong> para APIs rápidas
+            y ligeras, y <strong className="font-semibold">Java</strong> con{" "}
+            <strong className="font-semibold">Spring Boot</strong> para
+            aplicaciones empresariales. Además trabajo con bases de datos
+            relacionales y no relacionales — por ejemplo,{" "}
+            <strong className="font-semibold">MySQL</strong> con{" "}
+            <strong className="font-semibold">JDBC</strong> y soluciones{" "}
+            <strong className="font-semibold">NoSQL</strong> — lo que me permite
+            diseñar y consumir servicios robustos, escalables y bien
+            estructurados.
+            {/*             En el backend, manejo tecnologías y patrones tanto en Java como en
+            JavaScript. Utilizo <strong>Node.js</strong> y{" "}
+            <strong>Express</strong> para APIs rápidas y ligeras, y{" "}
+            <strong>Java</strong> con <strong>Spring Boot</strong> para
+            aplicaciones empresariales. Además trabajo con bases de datos
+            relacionales y no relacionales (por ejemplo, <strong>MySQL</strong>{" "}
+            con <strong>JDBC</strong> y soluciones NoSQL), lo que me permite
+            diseñar y consumir servicios robustos y escalables. */}
           </p>
+
           <p className="z-10 m-3">
-            🚀 Estoy en busca de nuevos desafíos y oportunidades en el sector
+            🚀 Actualmente me encuentro en la búsqueda de nuevos desafíos y
+            oportunidades dentro del sector tecnológico, donde pueda aplicar mis
+            conocimientos, aportar valor desde el primer día y continuar
+            creciendo profesionalmente. Fuera del código, disfruto hacer{" "}
+            <strong className="font-semibold">mountain bike</strong> y entrenar
+            en el gimnasio, actividades que me ayudan a mantener el enfoque, la
+            disciplina y la energía.
+            {/*             🚀 Estoy en busca de nuevos desafíos y oportunidades en el sector
             tecnológico, donde pueda aplicar mis habilidades técnicas y
             continuar creciendo profesionalmente. Cuando no estoy codificando,
             disfruto hacer <strong>mountain bike</strong> y entrenar en el
             gimnasio, actividades que me ayudan a mantenerme enfocado y
-            enérgico.
+            enérgico. */}
           </p>
         </div>
       </div>
