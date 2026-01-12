@@ -12,6 +12,7 @@ import {
   SiMongodb,
   SiTypescript,
   SiMysql,
+  SiSpringboot,
 } from "react-icons/si";
 import { Skill } from "../models/Skill";
 
@@ -24,6 +25,7 @@ const skills: Skill[] = [
   { name: "React", icon: <FaReact /> },
   { name: "Typescript", icon: <SiTypescript /> },
   { name: "JAVA", icon: <FaJava /> },
+  { name: "Spring Boot", icon: <SiSpringboot /> },
   { name: "Node.js", icon: <FaNodeJs /> },
   { name: "MongoDB", icon: <SiMongodb /> },
   { name: "MySQL", icon: <SiMysql /> },

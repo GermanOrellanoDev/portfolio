@@ -15,7 +15,8 @@ const ProjectItem = (project: Props) => {
       <div className="relative h-48 overflow-hidden">
         <img
           src={project.image}
-          alt={project.name}
+          alt={`Captura del proyecto ${project.name}`}
+          loading="lazy"
           className="w-full h-full object-cover object-center"
         />
       </div>
