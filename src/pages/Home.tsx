@@ -1,13 +1,15 @@
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
-import AboutMe from "../components/AboutMe/AboutMe.tsx";
-import Hero from "../components/Hero/Hero.tsx";
-import ProjectListContainer from "../components/Projects/ProjectListContainer.tsx";
+import AboutMe from "../components/AboutMe.tsx";
+import Hero from "../components/Hero.tsx";
+import Navbar from "../components/Navbar.tsx";
+import ProjectListContainer from "../components/ProjectListContainer.tsx";
 import useFetchProjects from "../hooks/useFetchProjects.ts";
-import Skills from "../components/Skills/Skills.tsx";
-import ContactMe from "../components/ContactMe/ContactMe.tsx";
-import Footer from "../components/Footer/Footer.tsx";
+import Skills from "../components/Skills.tsx";
+import ContactMe from "../components/ContactMe.tsx";
+import Footer from "../components/Footer.tsx";
+import SoftAurora from "../components/react-bits/SoftAurora.tsx";
 
 function Home() {
   const { projectsArray, loading, error } = useFetchProjects(
@@ -16,59 +18,75 @@ function Home() {
 
   useEffect(() => {
     AOS.init({
-      duration: 1200,
-      once: false,
+      duration: 1000,
+      once: true,
+      offset: 80,
     });
   }, []);
 
   return (
-    //revisar
-    <>
-      <div className="min-h-screen bg-gray-900 text-white">
-        <section
-          className="bg-gradient-to-r from-blue-950 to-purple-600 text-white py-20 px-4 sm:px-6 lg:px-8 xl:px-10"
-          data-aos="fade-down"
-          id="hero"
-        >
+    <div className="relative min-h-screen bg-[#0F0C1B] text-white overflow-x-hidden selection:bg-sky-400 selection:text-slate-950">
+      {/* Fondo Aurora interactivo */}
+      <div className="absolute inset-0 z-0 opacity-40 pointer-events-none">
+        <SoftAurora
+          speed={1}
+          scale={2.2}
+          brightness={1.4}
+          color1="#f7f7f7"
+          color2="#e100ff"
+          noiseFrequency={2}
+          noiseAmplitude={1.5}
+          bandHeight={0.5}
+          bandSpread={0.9}
+          octaveDecay={0.26}
+          layerOffset={0.2}
+          colorSpeed={1}
+          enableMouseInteraction
+          mouseInfluence={0.3}
+        />
+      </div>
+
+      <Navbar />
+
+      {/* Contenido principal centrado con sistema de grilla */}
+      <main className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* HERO */}
+        <section className="pt-28 pb-16 md:pt-36 md:pb-24 lg:pt-40 lg:pb-28" id="hero">
           <Hero />
         </section>
-        <section
-          className="py-16 px-4 sm:px-6 lg:px-8 xl:px-10"
-          data-aos="fade-up"
-          id="about-me"
-        >
+
+        {/* ABOUT ME */}
+        <section className="py-16 md:py-24 lg:py-28" data-aos="fade-up" id="about-me">
           <AboutMe />
         </section>
-        <section
-          className="bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 xl:px-10"
-          data-aos="fade-up"
-          id="my-projects"
-        >
+
+        {/* PROYECTOS */}
+        <section className="py-16 md:py-24 lg:py-28" data-aos="fade-up" id="my-projects">
           <ProjectListContainer
             projects={projectsArray}
             loading={loading}
             error={error}
-          ></ProjectListContainer>
+          />
         </section>
-        <section
-          className="py-16 px-4 sm:px-6 lg:px-8 xl:px-10"
-          data-aos="fade-up"
-          id="skills"
-        >
+
+        {/* SKILLS */}
+        <section className="py-16 md:py-24 lg:py-28" data-aos="fade-up" id="skills">
           <Skills />
         </section>
-        <section
-          className="bg-gray-800 py-16 px-4 sm:px-6 lg:px-8 xl:px-10"
-          data-aos="fade-up"
-          id="contact-me"
-        >
+
+        {/* CONTACTO */}
+        <section className="py-16 md:py-24 lg:py-28" data-aos="fade-up" id="contact-me">
           <ContactMe />
         </section>
-        <section className="py-16 px-4 sm:px-6 lg:px-8 xl:px-10" id="footer">
+      </main>
+
+      {/* FOOTER */}
+      <footer className="relative z-10 py-8 border-t border-[#2A244D] bg-[#0F0C1B]/80 backdrop-blur-md" id="footer">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Footer />
-        </section>
-      </div>
-    </>
+        </div>
+      </footer>
+    </div>
   );
 }
 

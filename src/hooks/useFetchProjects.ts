@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Project } from "../components/Projects/models/Project";
+import { Project } from "../models/Project";
 
 const useFetchProjects = (url: string) => {
   const [projectsArray, setProjectsArray] = useState<Project[]>([]);
@@ -14,8 +14,7 @@ const useFetchProjects = (url: string) => {
         const data: Project[] = await response.json();
         const filteredProjects = data.filter(
           (project) =>
-            project.name.toLowerCase() !== "germanorellanodev" &&
-            project.name.toLocaleLowerCase() !== "portfolio"
+            project.name.toLocaleLowerCase() == "erp-project" || project.name.toLocaleLowerCase() == "appointment-management-platform" || project.name.toLocaleLowerCase() == "support-api" || project.name.toLocaleLowerCase() == "auth-api"
         );
         setProjectsArray(filteredProjects);
       } catch (error) {
